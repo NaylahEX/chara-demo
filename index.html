@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>キャラクター着せ替えデモ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <h1>キャラクター着せ替えデモ</h1>
+      <p>好きなキャラクターイメージをカスタマイズしよう!✨</p>
+    </header>
+
+    <main class="main">
+      <section class="avatar-panel">
+        <div class="avatar-wrapper">
+          <div class="avatar-inner">
+
+            <!-- 髪のグループ：髪色用 -->
+            <div class="hair-group">
+              <img id="layer-hair" class="avatar-layer" src="assets/hair/hair_1.png" alt="hair" />
+              <div id="layer-hair-color" class="avatar-color-layer"></div>
+            </div>
+
+            <!-- その他のレイヤー -->
+            <img id="layer-base" class="avatar-layer" src="assets/base/base.png" alt="base" />
+            <img id="layer-clothes" class="avatar-layer" src="assets/clothes/clothes_1.png" alt="clothes" />
+            <img id="layer-hat" class="avatar-layer" src="assets/hat/hat_1.png" alt="hat" />
+            <img id="layer-ear" class="avatar-layer" src="assets/ear/ear_1.png" alt="ear" />
+
+            <!-- 目のグループ：瞳色用 -->
+            <div class="eye-group">
+              <img id="layer-eyes" class="avatar-layer" src="assets/eyes/eyes_1.png" alt="eyes" />
+              <div id="layer-eyes-color" class="avatar-color-layer"></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- コントロールパネル -->
+      <section class="controls-panel">
+
+        <div class="control-group">
+          <label for="select-hair">髪型</label>
+          <select id="select-hair"></select>
+        </div>
+
+        <div class="control-group">
+          <label for="hair-color">髪色</label>
+          <input id="hair-color" type="color" value="#ffffff" />
+        </div>
+
+        <div class="control-group">
+          <label for="select-eyes">瞳</label>
+          <select id="select-eyes"></select>
+        </div>
+
+        <div class="control-group">
+          <label for="eyes-color">瞳の色</label>
+          <input id="eyes-color" type="color" value="#ffffff" />
+        </div>
+
+        <div class="control-group">
+          <label for="select-clothes">服</label>
+          <select id="select-clothes"></select>
+        </div>
+
+        <div class="control-group">
+          <label for="select-hat">帽子</label>
+          <select id="select-hat"></select>
+        </div>
+
+        <div class="control-group">
+          <label for="select-ear">耳</label>
+          <select id="select-ear"></select>
+        </div>
+
+        <button id="btn-random">ランダムコーデ</button>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Shin Roka — デモ作品</p>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
